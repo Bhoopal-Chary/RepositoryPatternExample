@@ -14,6 +14,7 @@ namespace RepositoryPatternExample.Controllers
 		// GET: DeptController/Details/5
 		public ActionResult Details(int id)
 		{
+			//Here is the logic 
 			return View();
 		}
 
@@ -49,6 +50,8 @@ namespace RepositoryPatternExample.Controllers
 		[ValidateAntiForgeryToken]
 		public ActionResult Edit(int id, IFormCollection collection)
 		{
+
+			//Modified method Name to Update
 			try
 			{
 				return RedirectToAction(nameof(Index));
